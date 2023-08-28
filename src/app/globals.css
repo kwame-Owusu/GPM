@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* { margin: 0; padding: 0; }
+
+
+
+
+html{
+  /* added !important because normal smooth was not working */
+  scroll-behavior: smooth  !important;
+  overflow-x: hidden !important;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* to remove the horizontal scroll that was appearing on tablet and mobile mode */
+@media screen and (max-width: 1200px){
+  body{
+    overflow-x: hidden !important;
+  }
+}
+
+
+
+
+.custom-img{
+  background-image: url("./hero-img.jpg");
+  width: 100%;
+  object-fit: cover;
+ 
+}
+.btn-hero{
+  display: inline-block;
+  top: 0;
+  transition: top ease .6s;
+  border-radius: 50px;
+}
+@media (max-width: 1750px) {
+  #about-us{
+    font-size: 30px;
+  }
+}
+
+.about-img{
+  background-image: url("https://images.unsplash.com/photo-1667685190433-e11cf14c7a2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80");
+  backdrop-filter: blur(100px);
+  object-fit: cover;
+  width: 100%;
+}
+
+
+#gallery-img{
+  filter: grayscale(100%);
+ 
+}
+
+#gallery-img:hover{
+  filter: grayscale(0);
+}
+@media (max-width: 1000px){
+  #gallery-img{
+    filter: grayscale(0);
+    
+  }
+}
+/* footer properties */
+#footer{
+  background-color: gray;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+#bi-instagram{
+  color: white;
+  opacity: 0.5;
+  transition: ease-in .4s ;
+}
+
+#bi-instagram:hover{
+  opacity: 1;
+}
+
+#socials{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 0 10px;
+}
+
+/* footer section */
+footer{
+  background-color: "#040D12";
+  padding-top: 40px;
+  list-style: none;
+}
+#footer-content{
+  height: 15vh;
+  background-color: "#2B2730";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  
+
+}
+
+#footer-content p{
+  font-size: 15px;
+
+}
+#socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  color: aliceblue;
+  
+}
+
+#socials li{
+  margin: 0 10px;
+ 
+
+  
+}
+
+
+#footer-bottom{
+  color: black;
+  background-color: "#040D12";
+  font-size: 13px;
+  text-transform: capitalize;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#location{
+  border-radius: 40px;
+  filter: grayscale(100%);
+}
+#location:hover{
+  filter: grayscale(20%);
+}
