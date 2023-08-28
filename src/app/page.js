@@ -1,14 +1,14 @@
 "use client";
 import Head from 'next/head'
-import Hero from '../../components/hero'
-import Navbar  from '../../components/Navbar'
-import Section from '../../components/section'
+import Hero from '../../components/Hero';
+import Navbar  from '../../components/Navbar';
+import Section from '../../components/section';
 import Slider from '../../components/Slider';
 import { SliderData } from '../../components/SliderData';
 import Socials from '../../components/Socials';
 import Location from '../../components/Location';
 import Work from '../../components/Work';
-import 'animate.css';
+
 
 
 
